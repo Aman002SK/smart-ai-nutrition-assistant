@@ -1,8 +1,14 @@
 🥗 Smart AI Nutrition Assistant 
+
+
 📌 Project Overview
+
+
 This project is an AI-based meal planning system that uses a cleaned dataset of Indian recipes, nutritional categorization, and the phi-2 language model to generate personalized meal plans. It allows users to specify dietary preferences, caloric goals, and ingredient preferences to receive structured, healthy meal plans.
 
+
 🚀 Key Features
+
 Natural language-based meal plan generation using LLM (phi-2).
 
 Embedding-based recipe retrieval with FAISS.
@@ -14,9 +20,11 @@ FastAPI-ready structure for easy API deployment.
 Easily extendable for web or mobile UI integration.
 
 📂 Project Structure
+
 bash
 Copy
 Edit
+
 ├── cleaned_recipes.json             # Cleaned data after removing duplicates
 ├── categorized_recipes.json         # Recipes with dietary labels
 ├── recipe_embeddings.npy            # Sentence embeddings of recipes
@@ -95,6 +103,8 @@ preferences = {
     "excluded_ingredients": ["onion", "garlic"]
 }
 print(generate_meal_plan(preferences))
+
+
 🔮 Future Enhancements
 Add nutrition breakdown per recipe
 
